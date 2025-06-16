@@ -51,12 +51,6 @@ pip install -r requirements.txt
 python scripts/train.py
 ```
 
-### 1. Train the model
-
-```bash
-python scripts/train.py
-```
-
 - Downloads & tokenizes the IMDB dataset (cached under data/).
 - Trains for 5 epochs (resumeable via checkpoints/train_ckpt.pkl).
 - Saves the best model to checkpoints/best-model.pt.
