@@ -106,6 +106,33 @@ The custom loss function is designed to improve sentiment classification by comb
 
 ---
 
+##  Model Performance Results
+
+- **Validation**: Accuracy = 0.9172 | F1 = 0.9568  
+- **Test**: Accuracy = 0.91528 | F1 = 0.91315  
+
+**Comparison to State-of-the-Art**
+
+| Model                                              | Accuracy | F1 Score | Source                                  |
+|----------------------------------------------------|----------|----------|-----------------------------------------|
+| Space-XLNet (Papers With Code SOTA)                | 94.88%   | —        | :contentReference[oaicite:0]{index=0} |
+| textattack/xlnet-base-cased-imdb (Hugging Face)    | 95.352%  | 95.04%   | :contentReference[oaicite:1]{index=1} |
+| finetuning-xlnet-base-cased-on-imdb (Hugging Face) | 95.06%   | 95.04%   | :contentReference[oaicite:2]{index=2} |
+
+Despite trailing the top transformer-based models by ~3–4 percentage points, our BERT-based classifier with a custom weighted loss demonstrates strong performance and benefits from efficient MPS training.
+
+**Performance Plots**
+
+![Training Loss over Epochs](plots/train_loss.png)  
+![Validation Accuracy & F1 over Epochs](plots/val_metrics.png)  
+![Smoothed Validation F1](plots/smoothed_val_f1.png)  
+![Epoch Duration per Epoch](plots/epoch_time.png)  
+![ROC Curve](plots/roc_curve.png)  
+![Confusion Matrix](plots/confusion_matrix.png)  
+
+
+---
+
 ## Potential Improvements
 
 - **Hyperparameter Optimization**  
