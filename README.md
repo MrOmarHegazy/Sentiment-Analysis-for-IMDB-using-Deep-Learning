@@ -24,7 +24,7 @@ This repository contains an end-to-end sentiment analysis pipeline built with Py
 
 ```bash
 # Clone the repo
-git clone <your-repo-url>
+git clone https://github.com/MrOmarHegazy/Sentiment-Analysis-for-IMDB-using-Deep-Learning.git
 cd sentiment-analysis
 
 # Create a venv and activate
