@@ -129,6 +129,9 @@ Despite trailing the top transformer-based models by ~3–4 percentage points, o
 
 ## Potential Improvements
 
+- **Training Over More Epochs**
+  Due to time constraints, training was only run for 5 epochs, although to achieve full model potential, realistically model should be trained for at least 30-40 epochs.
+
 - **Hyperparameter Optimization**  
   Automate search over learning rate, batch size, dropout rate, and loss-weight parameters (e.g. with Optuna).
 
