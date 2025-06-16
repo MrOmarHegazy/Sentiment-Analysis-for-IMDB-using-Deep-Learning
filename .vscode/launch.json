@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Train",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "scripts.train",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "TOKENIZERS_PARALLELISM": "false"
+      }
+    }
+  ]
+}

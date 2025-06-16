@@ -1,0 +1,6 @@
+# checkpoints
+checkpoints/best-model.pt
+checkpoints/train_ckpt.pkl
+
+# data cache
+data/
